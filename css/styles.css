@@ -369,80 +369,6 @@ p {
   max-width: 320px;
 }
 
-@media (min-resolution: 192dpi) {
-  .button-section {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/back-mob-2x.jpg");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .button-section {
-    width: 768px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/back-tablet.jpg");
-
-    padding-top: 112px;
-    padding-bottom: 112px;
-    max-width: 768px;
-  }
-  @media (min-resolution: 192dpi) {
-    .button-section {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/back-tablet2x.jpg");
-    }
-  }
-
-  .page-title {
-    min-width: 496px;
-    font-size: 56px;
-    margin-bottom: 36px;
-  }
-}
-
-@media screen and (min-width: 1158px) {
-  .button-section {
-    width: 1158px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/desk-back.jpg");
-
-    padding-top: 188px;
-    padding-bottom: 188px;
-    min-width: 1440px;
-  }
-  @media (min-resolution: 192dpi) {
-    .button-section {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url("../images/desk-back2x.jpg");
-    }
-  }
-  .page-title {
-    max-width: 496px;
-    font-size: 56px;
-    margin-bottom: 36px;
-  }
-}
-
 .page-title {
   max-width: 216px;
   font-weight: 700;
@@ -452,7 +378,6 @@ p {
   letter-spacing: 0.02em;
   color: #fff;
 
-  max-width: 216px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -490,6 +415,80 @@ p {
   background-color: #404bbf;
 }
 
+@media (min-resolution: 192dpi) {
+  .button-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/back-mob-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-section {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/back-tablet.jpg");
+
+    padding-top: 112px;
+    padding-bottom: 112px;
+    max-width: 768px;
+  }
+  @media (min-resolution: 192dpi) {
+    .button-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/back-tablet2x.jpg");
+    }
+  }
+
+  .page-title {
+    max-width: 496px;
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .button-section {
+    width: 1158px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/desk-back.jpg");
+
+    padding-top: 188px;
+    padding-bottom: 188px;
+    min-width: 1440px;
+  }
+  @media (min-resolution: 192dpi) {
+    .button-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/desk-back2x.jpg");
+    }
+  }
+  .page-title {
+    max-width: 496px;
+    font-size: 56px;
+    margin-bottom: 36px;
+  }
+}
+
 /*FEATURES*/
 .features-list {
   display: flex;
@@ -521,7 +520,8 @@ p {
 }
 
 .features {
-  padding: 0 16px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 @media screen and (min-width: 768px) {
   .features-box {
@@ -535,10 +535,13 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    gap: 24px;
+    gap: 72px 24px;
   }
   .features-item {
     width: calc((100% - 24px) / 2);
+  }
+  .title-three {
+    text-align: left;
   }
 }
 
@@ -629,8 +632,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 72px;
-  padding: 0 12px 0 12px;
+  gap: 64px 24px;
 
   flex-wrap: wrap;
 }
@@ -893,7 +895,6 @@ p {
   color: #4d5ae5;
 
   display: inline-block;
-  margin-bottom: 16px;
 }
 .studio-footer {
   font-family: "Raleway", sans-serif;
@@ -911,7 +912,6 @@ p {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
-  margin-bottom: 72px;
 }
 
 .social-paragraph {
@@ -988,7 +988,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+
   color: #fff;
 }
 
@@ -1022,12 +1022,17 @@ p {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
-
     flex-wrap: wrap;
-
-    gap: 24px;
+    gap: 72px 24px;
+    max-width: 584px;
+    justify-content: flex-start;
   }
-
+  .media-footer {
+    text-align: left;
+  }
+  .footer-text {
+    max-width: 264px;
+  }
   .form-footer {
     display: flex;
     flex-direction: row;
@@ -1039,7 +1044,10 @@ p {
     margin-bottom: 0;
   }
   .form-name {
-    text-align: start;
+    text-align: left;
+  }
+  .footer-box {
+    text-align: left;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1050,7 +1058,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    max-width: 1440px;
+    max-width: 1158px;
+    gap: unset;
   }
   .footer-text {
     max-width: 264px;
@@ -1062,6 +1071,9 @@ p {
 
   .media-footer {
     margin-right: 80px;
+  }
+  .social-paragraph {
+    text-align: left;
   }
   .email-input {
     width: 264px;
@@ -1211,7 +1223,7 @@ p {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  width: 408px;
+  width: 288px;
   min-height: 584px;
 
   transform: translate(-50%, -50%);
@@ -1301,13 +1313,6 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-box {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-
   margin-bottom: 24px;
 }
 .accent-policy {
@@ -1318,6 +1323,8 @@ p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1359,6 +1366,7 @@ p {
     min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
+
   .close-btn {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
